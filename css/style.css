@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster|PT+Sans:400,700");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+header {
+  max-width: 1400px;
+  margin: auto;
+  background-image: url(images/laptop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    header {
+      max-width: 768px; } }
+  header nav .contenedor-top {
+    background: #242949;
+    opacity: 0.8;
+    max-width: 100%;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    -moz-boxshadow: 5px 5px 7px black;
+    -o-box-shadow: 5px 5px 7px black;
+    -webkit-box-shadow: 5px 5px 7px black;
+    -ms-box-shadow: 5px 5px 7px black;
+    box-shadow: 5px 5px 7px black; }
+    header nav .contenedor-top h3 {
+      color: #fffbff;
+      font-family: "Lobster";
+      font-size: 35px;
+      padding: 10px 0px 10px 35px;
+      text-shadow: 1px 1px 1px black; }
+      @media screen and (max-width: 768px) {
+        header nav .contenedor-top h3 {
+          font-size: 25px;
+          padding: 5px; } }
+    header nav .contenedor-top .menu-desktop {
+      font-size: 15px;
+      display: flex;
+      font-family: "PT Sans";
+      font-weight: 700;
+      padding-right: 35px;
+      text-transform: uppercase; }
+      @media screen and (max-width: 768px) {
+        header nav .contenedor-top .menu-desktop {
+          display: none; } }
+      header nav .contenedor-top .menu-desktop li {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px 20px; }
+        header nav .contenedor-top .menu-desktop li a {
+          text-decoration: none;
+          color: #fffbff;
+          text-shadow: 2px 2px 1px black;
+          transition: all 1s ease; }
+          header nav .contenedor-top .menu-desktop li a:hover {
+            color: grey; }
+    header nav .contenedor-top .menu-responsive {
+      display: none; }
+      @media screen and (max-width: 768px) {
+        header nav .contenedor-top .menu-responsive {
+          display: inline-block;
+          float: right;
+          display: flex;
+          flex-direction: row;
+          align-items: center; } }
+      header nav .contenedor-top .menu-responsive p {
+        font-family: "PT Sans";
+        color: #fffbff;
+        font-size: 15px;
+        padding: 10px;
+        text-transform: uppercase;
+        font-weight: 700; }
+      header nav .contenedor-top .menu-responsive span {
+        color: #fffbff;
+        font-size: 15px;
+        padding: 10px; }
+  header .contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px; }
+    header .contenedor h1 {
+      color: #fffbff;
+      font-family: "Lobster";
+      font-size: 160px;
+      text-shadow: 4px 4px 2px black;
+      padding: 40px 0px; }
+      @media screen and (max-width: 768px) {
+        header .contenedor h1 {
+          font-size: 80px;
+          text-shadow: 2px 2px 1px black;
+          padding: 20px 0px; } }
+    header .contenedor h2 {
+      font-size: 30px;
+      display: flex;
+      font-family: "PT Sans";
+      color: #fffbff;
+      text-shadow: 2px 2px 1px black;
+      padding: 30px 120px;
+      text-align: center;
+      font-weight: 700; }
+      @media screen and (max-width: 768px) {
+        header .contenedor h2 {
+          font-size: 20px;
+          padding: 20px 200px; } }
+    header .contenedor nav {
+      font-size: 30px; }
+      @media screen and (max-width: 768px) {
+        header .contenedor nav {
+          font-size: 15px; } }
+      header .contenedor nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 80px; }
+        header .contenedor nav ul li {
+          border: 2px solid #fffbff;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          margin: 15px;
+          padding: 15px;
+          transition: all 1s ease; }
+          header .contenedor nav ul li span {
+            color: #fffbff; }
+          header .contenedor nav ul li .ion-social-facebook-outline {
+            padding: 0px 5px; }
+          header .contenedor nav ul li:hover {
+            background: grey; }
+
+.biografia div {
+  max-width: 100%;
+  background: #7180ac;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px; }
+  @media screen and (max-width: 768px) {
+    .biografia div {
+      padding: 20px 0px 30px 10px; } }
+  .biografia div article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .biografia div article div h4 {
+      font-size: 40px;
+      color: #fffbff;
+      text-shadow: 1px 1px 1px black;
+      font-family: "Lobster"; }
+      @media screen and (max-width: 768px) {
+        .biografia div article div h4 {
+          font-size: 30px; } }
+    .biografia div article .textos {
+      display: flex;
+      flex-direction: row;
+      padding: 60px 50px;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      @media screen and (max-width: 768px) {
+        .biografia div article .textos {
+          padding: 20px 10px;
+          justify-content: center; } }
+      .biografia div article .textos p {
+        max-width: 40%;
+        font-family: "PT Sans";
+        color: #242949;
+        padding: 20px 40px;
+        font-size: 25px;
+        line-height: 30px; }
+        @media screen and (max-width: 768px) {
+          .biografia div article .textos p {
+            font-size: 15px;
+            line-height: 20px;
+            padding: 10px 20px; } }
+      @media screen and (max-width: 768px) {
+        .biografia div article .textos .p2 {
+          display: none; } }
+
+.trabajos {
+  max-width: 100%;
+  margin: auto;
+  background-image: url(images/hero-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 230px 20px; }
+  @media screen and (max-width: 768px) {
+    .trabajos {
+      flex-direction: column;
+      padding: 20px 10px;
+      justify-content: center;
+      align-items: center; } }
+  .trabajos article {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 768px) {
+      .trabajos article {
+        padding: 30px; } }
+    .trabajos article h3 {
+      font-size: 70px;
+      font-family: "Lobster";
+      color: #fffbff;
+      text-shadow: 1px 1px 1px black; }
+      @media screen and (max-width: 768px) {
+        .trabajos article h3 {
+          font-size: 40px; } }
+    .trabajos article p {
+      font-size: 30px;
+      font-family: "PT Sans";
+      color: #fffbff;
+      padding-top: 20px;
+      text-shadow: 1px 1px 1px black; }
+      @media screen and (max-width: 768px) {
+        .trabajos article p {
+          font-size: 15px;
+          padding-top: 5px; } }
+
+.proyectos {
+  max-width: 100%;
+  margin: auto;
+  background: #7180ac; }
+  .proyectos div {
+    text-align: center; }
+    .proyectos div h3 {
+      font-family: "Lobster";
+      color: #fffbff;
+      text-shadow: 1px 1px 1px black;
+      font-size: 40px;
+      padding-top: 40px; }
+      @media screen and (max-width: 768px) {
+        .proyectos div h3 {
+          font-size: 20px;
+          padding-top: 20px; } }
+    .proyectos div .texto-proy {
+      font-family: "PT Sans";
+      color: #242949;
+      font-size: 15px;
+      align-self: flex-end;
+      padding-top: 20px; }
+      @media screen and (max-width: 768px) {
+        .proyectos div .texto-proy {
+          font-size: 10px; } }
+  .proyectos article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 100px; }
+    @media screen and (max-width: 768px) {
+      .proyectos article {
+        padding: 15px 50px; } }
+    .proyectos article img {
+      max-width: 300px;
+      max-height: 250px;
+      margin: 20px; }
+      @media screen and (max-width: 768px) {
+        .proyectos article img {
+          max-width: 150px;
+          max-height: 125px;
+          margin: 50px; } }
+
+.frase {
+  max-width: 100%;
+  margin: auto;
+  background-image: url(images/laptop-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .frase div {
+    padding: 250px 0px 250px 0px; }
+    @media screen and (max-width: 768px) {
+      .frase div {
+        padding: 150px 100px; } }
+    .frase div h3 {
+      font-family: "Lobster";
+      color: #242949;
+      text-shadow: 2px 2px 1px grey;
+      font-size: 50px;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        .frase div h3 {
+          font-size: 35px; } }
+    .frase div p {
+      font-family: "PT Sans";
+      font-size: 25px;
+      color: #242949;
+      padding-top: 20px;
+      text-shadow: 2px 2px 1px grey;
+      font-weight: 700;
+      text-align: center; }
+      @media screen and (max-width: 768px) {
+        .frase div p {
+          font-size: 15px; } }
+
+.contacto {
+  max-width: 100%;
+  margin: auto;
+  background: #7180ac; }
+  .contacto article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px; }
+    @media screen and (max-width: 768px) {
+      .contacto article {
+        padding: 10px 0px; } }
+    .contacto article div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contacto article div h3 {
+        font-family: "Lobster";
+        color: #fffbff;
+        text-shadow: 1px 1px 1px black;
+        font-size: 40px; }
+        @media screen and (max-width: 768px) {
+          .contacto article div h3 {
+            font-size: 20px; } }
+    .contacto article article {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; }
+      .contacto article article form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+        .contacto article article form input {
+          font-family: "PT Sans";
+          font-size: 15px;
+          line-height: 20px;
+          width: 500px;
+          margin: 10px 0px;
+          padding: 5px 0px;
+          border-radius: 5%;
+          background: #242949;
+          color: grey;
+          padding-left: 5px;
+          border-style: none; }
+          @media screen and (max-width: 768px) {
+            .contacto article article form input {
+              width: 250px;
+              font-size: 10px;
+              line-height: 15px;
+              margin: 5px 0px; } }
+        .contacto article article form textarea {
+          font-family: "PT Sans";
+          font-size: 15px;
+          line-height: 20px;
+          width: 500px;
+          margin: 10px 0px;
+          padding: 5px 0px;
+          border-style: none;
+          border-radius: 5%;
+          background: #242949;
+          color: grey;
+          padding-left: 5px; }
+          @media screen and (max-width: 768px) {
+            .contacto article article form textarea {
+              width: 250px;
+              font-size: 10px;
+              margin: 5px 0px; } }
+        .contacto article article form .boton {
+          justify-content: center;
+          align-items: center;
+          height: 40px;
+          width: 70px;
+          border: none;
+          border-radius: 5%;
+          background: #242949;
+          color: grey;
+          border-style: none; }
+          @media screen and (max-width: 768px) {
+            .contacto article article form .boton {
+              width: 35px;
+              height: 25px;
+              font-size: 10px;
+              /*PREGUNTAR POR QUE QUEDA TORCIDO
+              EL TEXTO ENVIAR*/ } }
+
+footer {
+  max-width: 100%;
+  margin: auto;
+  background: #242949; }
+  footer article {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 10px;
+    flex-direction: row; }
+    @media screen and (max-width: 768px) {
+      footer article {
+        padding: 10px 5px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    footer article span {
+      font-size: 15px;
+      color: #fffbff;
+      opacity: 0.8;
+      text-align: center;
+      padding: 10px; }
+      @media screen and (max-width: 768px) {
+        footer article span {
+          font-size: 10px; } }
+    footer article p {
+      font-size: 15px;
+      font-family: "PT Sans";
+      color: #fffbff; }
+      @media screen and (max-width: 768px) {
+        footer article p {
+          font-size: 10px;
+          padding: 5px 0px; } }
+
+/*# sourceMappingURL=style.css.map */

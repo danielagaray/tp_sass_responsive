@@ -1,0 +1,181 @@
+@mixin hacer-sombra($des_x, $des_y,$blur,$colorx){
+	-moz-boxshadow: $des_x $des_y $blur $colorx;
+	-o-box-shadow: $des_x $des_y $blur $colorx;
+	-webkit-box-shadow: $des_x $des_y $blur $colorx;
+	-ms-box-shadow: $des_x $des_y $blur $colorx;
+	box-shadow: $des_x $des_y $blur $colorx;
+}
+
+@mixin circulo($radio){
+	-ms-border-radius:$radio;
+	-o-border-radius:$radio;
+	-webkit-border-radius:$radio;
+	-moz-border-radius:$radio;
+	border-radius:$radio;
+
+}
+
+
+header{
+	max-width: 1400px;
+	margin:auto;
+	background-image: url(images/laptop.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed; 
+	background-size: cover; 
+	@media screen and (max-width:768px){
+		max-width:768px;
+	}
+	nav{
+		.contenedor-top{
+
+			background:$color-top;
+			opacity: 0.8;
+			max-width: 100%;
+			text-decoration: none;
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding:5px;
+			display: flex;
+			justify-content: space-between;
+			@include hacer-sombra(5px, 5px, 7px, black);
+
+			h3{
+				color: $color-titulo;
+				font-family: $fuente-titulos;
+				font-size: 35px;
+				padding:10px 0px 10px 35px;
+				text-shadow: 1px 1px 1px $color-sombra;
+
+				@media screen and (max-width:768px){
+					font-size:25px;
+					padding:5px;
+				}
+			}
+			.menu-desktop{
+				@media screen and (max-width:768px){
+					display: none;
+				}
+
+				font-size: 15px;
+				display: flex;
+				font-family: $fuente-textos;
+				font-weight: 700;
+				padding-right: 35px;
+				text-transform: uppercase;
+				
+
+				li{
+					flex-direction: row;
+					justify-content: space-around;
+					padding: 0px 20px;
+					
+					a{
+						text-decoration: none;
+						color:$color-titulo;
+						text-shadow: 2px 2px 1px $color-sombra;
+						transition:all 1s ease;
+						&:hover{
+							color:grey;
+							
+						}
+					}
+				}
+			}
+			.menu-responsive{
+				display: none;
+
+				@media screen and (max-width:768px){
+					display: inline-block;
+					float: right;
+					display: flex;
+					flex-direction: row;	
+					align-items:center;	
+				}
+				p{
+					font-family: $fuente-textos;
+					color:$color-titulo;
+					font-size: 15px;
+					padding:10px;
+					text-transform: uppercase;
+					font-weight: 700;
+				}
+				span{
+					color:$color-titulo;
+					font-size: 15px;
+					padding:10px;
+				}
+			}
+		}
+	}
+	.contenedor{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 30px 0px;
+
+		h1{
+			color: $color-titulo;
+			font-family: $fuente-titulos;
+			font-size: 160px;
+			text-shadow: 4px 4px 2px $color-sombra;
+			padding: 40px 0px;
+			@media screen and (max-width:768px){
+				font-size: 80px;
+				text-shadow: 2px 2px 1px $color-sombra;
+				padding:20px 0px;
+			}
+		}
+		h2{
+			font-size: 30px;
+			display: flex;
+			font-family: $fuente-textos;
+			color: $color-titulo;
+			text-shadow: 2px 2px 1px $color-sombra;
+			padding:30px 120px;
+			text-align: center;
+			font-weight: 700;
+			@media screen and (max-width:768px){
+				font-size: 20px;
+				padding: 20px 200px;
+			}
+		}
+		nav{
+			font-size: 30px;
+			@media screen and (max-width:768px){
+				font-size: 15px;
+			}
+			
+			ul{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				padding-top: 20px;
+				padding-bottom: 80px;
+
+				li{
+					
+					border:2px solid $color-titulo;
+					@include circulo(50%);
+					margin: 15px;
+					padding:15px;
+					transition: all 1s ease;
+					span{
+						color: $color-titulo;
+					}
+					.ion-social-facebook-outline{
+						padding: 0px 5px;
+					}
+					&:hover{
+						background:grey;
+					}
+				}	
+			}
+		}
+	}
+} 
